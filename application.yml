@@ -1,1 +1,3 @@
+#this have to be on master branch
+#this is global config, available for all profiles and environments
 foo: bar
