@@ -1,0 +1,15 @@
+#this have to be on master branch
+#this is global config, available for all environments in 'local' profile
+
+eureka:
+  client:
+    enabled: false
+
+spring:
+  zipkin:
+    enabled: true
+    baseUrl: http://localhost:9411
+
+oracle:
+  wolowa:
+    password: {cipher}afc188db6ec3f14fc898f9b8e469d96325355dfc3f12de34875b14be9617fa82
