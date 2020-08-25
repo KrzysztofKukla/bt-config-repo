@@ -12,4 +12,4 @@ spring:
 
 oracle:
   wolowa:
-    password: {cipher}afc188db6ec3f14fc898f9b8e469d96325355dfc3f12de34875b14be9617fa82
+    password: '{cipher}afc188db6ec3f14fc898f9b8e469d96325355dfc3f12de34875b14be9617fa82'
