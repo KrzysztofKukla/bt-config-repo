@@ -1,5 +1,1 @@
-eureka:
-  client:
-    enabled: false
-
-foot: curr-local
+foo: config_server_currency_application_bt_currency_local

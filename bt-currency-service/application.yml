@@ -1,5 +1,8 @@
-eureka:
-  client:
-    enabled: true
+#spring:
+#  datasource:
+#    username: 'bt-currency-service'
 
-foot: curr
+
+
+foo: config_server_currency_application_bt_currency
+

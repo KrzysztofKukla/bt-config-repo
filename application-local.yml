@@ -1,6 +1,8 @@
 #this have to be on master branch
 #this is global config, available for all environments in 'local' profile
 
+foo: config_server_currency_application_local
+
 eureka:
   client:
     enabled: false
@@ -10,6 +12,26 @@ spring:
     enabled: true
     baseUrl: http://localhost:9411
 
-oracle:
-  wolowa:
-    password: '{cipher}afc188db6ec3f14fc898f9b8e469d96325355dfc3f12de34875b14be9617fa82'
+  # data source, database connection configuration
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/orcl12c
+    username: bt-currency-service
+    password: oracle
+    # Keep the connection alive if idle for a long time (needed in production)
+    testWhileIdle: true
+    validationQuery: SELECT 1
+  # Jpa/ Hibernate
+  # Show or not log for each sql query
+  jpa:
+    show-sql: true
+    # Allows Hibernate to generate SQL optimized for a particular DBMS
+    properties:
+      hibernate.dialect: org.hibernate.dialect.Oracle10gDialect
+    # Hibernate ddl auto (create, create-drop, update): with "create-drop" the database
+    # schema will be automatically created afresh for every start of application
+    hibernate:
+      ddl-auto: create-drop
+      # Naming strategy
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
