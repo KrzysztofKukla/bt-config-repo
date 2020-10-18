@@ -1,0 +1,28 @@
+spring:
+  # data source, database connection configuration
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: BT-CURRENCY-SERVICE
+    password: '{cipher}99fd25d85c17ddece28c5161bbb3db10c757eca544405d3e7cee4ae93c56d09779b429b68c8412c0acadd9e7efa05a18'
+    # Keep the connection alive if idle for a long time (needed in production)
+    vendor: ORACLE
+    driverClassName: oracle.jdbc.OracleDriver
+    testWhileIdle: true
+    validationQuery: SELECT 1
+  # Jpa/ Hibernate
+  # Show or not log for each sql query
+  jpa:
+    generate-ddl: false
+    schemaUpdate: false
+    show-sql: true
+    # Allows Hibernate to generate SQL optimized for a particular DBMS
+    properties:
+      hibernate.dialect: org.hibernate.dialect.Oracle10gDialect
+    # Hibernate ddl auto (create, create-drop, update): with "create-drop" the database
+    # schema will be automatically created afresh for every start of application
+    hibernate:
+      ddl-auto: create-drop
+      # Naming strategy
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy

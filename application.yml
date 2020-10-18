@@ -1,8 +1,6 @@
 #this have to be on master branch
-#this is global config, available for all profiles and environments
+#this is global config, available for all profiles and all environments
 
 eureka:
   client:
     enabled: true
-
-foo: config_server_currency_application
