@@ -1,0 +1,4 @@
+
+bt:
+  wallet-service:
+    url: https://bluetrade-server-demo-bt-wallet-service

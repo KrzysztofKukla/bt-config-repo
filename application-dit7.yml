@@ -1,3 +1,7 @@
+bt:
+  wallet-service:
+    url: https://bluetrade-server-dit7-bt-wallet-service
+
 spring:
   # data source, database connection configuration
   datasource:

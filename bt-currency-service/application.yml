@@ -2,6 +2,3 @@
 #  datasource:
 #    username: 'bt-currency-service'
 
-bt:
-  wallet-service:
-    url: http://localhost:8082/bt-wallet-service

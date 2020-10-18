@@ -1,1 +1,4 @@
 
+bt:
+  wallet-service:
+    url: https://bluetrade-server-env02-bt-wallet-service

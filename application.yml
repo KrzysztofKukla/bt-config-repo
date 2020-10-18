@@ -4,3 +4,7 @@
 eureka:
   client:
     enabled: true
+
+bt:
+  wallet-service:
+    url: https://bluetrade-server-bt-wallet-service

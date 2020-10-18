@@ -1,9 +1,7 @@
-#this have to be on master branch
-#this is global config, available for all profiles and all environments
 
-eureka:
-  client:
-    enabled: true
+bt:
+  wallet-service:
+    url: https://bluetrade-server-oracle-bt-wallet-service
 
 spring:
   # data source, database connection configuration
