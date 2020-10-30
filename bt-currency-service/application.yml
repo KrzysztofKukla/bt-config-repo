@@ -1,4 +1,6 @@
-#spring:
-#  datasource:
-#    username: 'bt-currency-service'
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://max:max@blue19mongocluster.dthlb.mongodb.net/bt-currency?retryWrites=true&w=majority
+      database: bt-currency
 
