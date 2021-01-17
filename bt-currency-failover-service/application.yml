@@ -1,0 +1,4 @@
+precious-metals:
+  external:
+    api:
+      url: https://www.goldapi.io/api
