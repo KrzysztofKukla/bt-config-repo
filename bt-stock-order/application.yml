@@ -1,6 +1,6 @@
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://max:max@blue19mongocluster.dthlb.mongodb.net/bt-currency?retryWrites=true&w=majority
+      uri: mongodb+srv://max:max@blue19mongocluster.dthlb.mongodb.net/bt-stock?retryWrites=true&w=majority
       database: bt-stock
 

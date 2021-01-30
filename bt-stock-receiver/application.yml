@@ -1,0 +1,4 @@
+stock:
+  external:
+    api:
+      url: http://api.marketstack.com/v1
