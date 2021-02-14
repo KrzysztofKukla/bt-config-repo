@@ -4,3 +4,7 @@ spring:
       uri: mongodb+srv://max:max@blue19mongocluster.dthlb.mongodb.net/bt-stock?retryWrites=true&w=majority
       database: bt-stock
 
+bt-stock-receiver:
+  api:
+    url:
+
