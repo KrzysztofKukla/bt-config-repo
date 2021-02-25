@@ -8,3 +8,7 @@ eureka:
 bt:
   wallet-service:
     url: https://bluetrade-server-bt-wallet-service
+  currency-receiver:
+    url: https://bluetrade-server-bt-currency-receiver
+  currency-order:
+    url: https://bluetrade-server-bt-currency-order
