@@ -9,6 +9,7 @@ bt:
   wallet-service:
     url: https://bluetrade-server-bt-wallet-service
   currency-receiver:
-    url: https://bluetrade-server-bt-currency-receiver
+    #    url: https://bluetrade-server-bt-currency-receiver
+    url: localhost:8083
   currency-order:
     url: https://bluetrade-server-bt-currency-order
